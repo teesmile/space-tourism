@@ -1,0 +1,26 @@
+export type Destination = {
+    name: string;
+    images: {png: string; webp?: string};
+    description: string;
+    distance: string;
+};
+
+export type Crew ={
+    name: string;
+    images: {png: string; webp?: string;
+        role: string;
+        bio: string;
+    }
+};
+
+export type Technology = {
+    name: string;
+    images: {png: string; webp?: string};
+    description: string;
+};
+
+export type SiteData = {
+    destinations: Destination[];
+    crew: Crew[];
+    technology: Technology[];
+};
