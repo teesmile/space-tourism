@@ -24,3 +24,5 @@ export type SiteData = {
     crew: Crew[];
     technology: Technology[];
 };
+
+export type RouteKey = 'home' | 'destination' | 'crew' | 'technology';

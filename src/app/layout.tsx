@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed, Bellefair } from "next/font/google";
 import "./globals.css";
-import StyledComponentsRegistry from "../styles/styled-registry";
+import Header from "@/components/layout/Header";
+import PageBackground from "@/components/layout/pageBackground";
+// import StyledComponentsRegistry from "@/styles/styled-registry"
 
 const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow-condensed",
@@ -34,11 +36,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${barlow.variable} ${bellefair.variable} ${barlowCondensed.variable} antialiased`}
+        className={`${barlow.variable} ${bellefair.variable} ${barlowCondensed.variable} min-h-dvh antialiased`}
       >
-        {/* <StyledComponentsRegistry> */}
+        <PageBackground route="home">
+     {/* <StyledComponentsRegistry> */}
+        <Header />
         {children}
         {/* </StyledComponentsRegistry> */}
+        </PageBackground>
       </body>
     </html>
   );

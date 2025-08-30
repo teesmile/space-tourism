@@ -1,4 +1,4 @@
-import data from '@/../data.json'
+import data from "@/data/data.json"
 import type {SiteData} from './types'
 
-export const siteData = data
+// export const siteData: SiteData = data;
