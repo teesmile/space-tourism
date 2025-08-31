@@ -38,12 +38,9 @@ export default function RootLayout({
       <body
         className={`${barlow.variable} ${bellefair.variable} ${barlowCondensed.variable} min-h-dvh antialiased`}
       >
-        <PageBackground route="home">
-     {/* <StyledComponentsRegistry> */}
-        <Header />
+        {/* <StyledComponentsRegistry> */}
         {children}
         {/* </StyledComponentsRegistry> */}
-        </PageBackground>
       </body>
     </html>
   );

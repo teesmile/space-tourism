@@ -11,20 +11,21 @@ const links = [
     {href: '/technology', label: 'TECHNOLOGY', num: '03'},
 ];
 
-export default function Nav(){
+export default function Nav({onNavigate}: {onNavigate?: ()=> void}){
     const pathname = usePathname()
 
     return(
- <nav aria-label="Primary" className="backdrop-blur-md bg-white/5">
-      <ul className="flex gap-8 px-8 py-5">
+ <div aria-label="Primary" className="backdrop-blur-md md:bg-white/5">
+      <ul className="flex flex-col md:flex-row gap-6 md:gap-8  py-2 w-full pt-15 md:pt-2 ">
         {links.map((l) => {
           const active = pathname === l.href;
           return (
-            <li key={l.href}>
+            <li key={l.href} className="w-full md:w-auto h-fit">
               <Link
                 href={l.href}
+                onClick={onNavigate}
                 className={clsx(
-                  'inline-flex gap-3 tracking-widest2 text-sm md:text-base text-white/80 border-b-2 border-transparent pb-2 transition-colors',
+                  'flex w-full md:w-auto gap-3 tracking-widest2 text-sm md:text-base text-blue-50 border-r-3 md:border-r-0 md:border-b-3 border-transparent transition-colors',
                   active && 'text-white border-white',
                   !active &&
                     'hover:border-white/30 focus-visible:border-white/60'
@@ -37,6 +38,6 @@ export default function Nav(){
           );
         })}
       </ul>
-    </nav>
+    </div>
     )
 }

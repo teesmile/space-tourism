@@ -1,19 +1,22 @@
 import PageBackground from "@/components/layout/pageBackground";
 import Image from "next/image";
 import ExploreButton from "@/components/ui/ExploreButton";
+import Header from "@/components/layout/Header";
 
 export default function Home() {
   return (
-    <PageBackground route="home"> 
-        <main className="flex flex-col items-center justify-center text-center px-6 py-12 md:flex-row md:justify-between md:text-left">
+        <PageBackground route="home">
+        <Header />
+        <main className="flex flex-col items-center text-center px-6 py-6 md:py-6 md:flex-row md:justify-between min-h-screen">
+          
         <div className="max-w-md">
-          <p className="uppercase tracking-widest2 text-space-gray text-lg md:text-xl">
+          <p className="uppercase tracking-widest2 text-space-gray mb-6 text-blue-100 text-lg md:text-xl">
             So, you want to travel to
           </p>
           <h1 className="font-bellefair text-7xl md:text-9xl uppercase text-white my-4">
             Space
           </h1>
-          <p className="text-space-gray leading-relaxed">
+          <p className="text-space-gray text-blue-50 leading-relaxed">
             Let’s face it: if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Sit back and relax because we’ll give you a truly out of this world
@@ -70,7 +73,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer> */}
+      </footer>  */}
     </PageBackground>
   );
 }
