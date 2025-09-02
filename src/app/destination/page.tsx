@@ -35,7 +35,7 @@ export default function DestinationPage() {
         <button
           key={d.name}
           onClick={() => setSelected(i)}
-          className={`uppercase tracking-widest2 text-blue-100 pb-2 border-b-2 transition-colors ${
+          className={`uppercase tracking-widest2 font-barlow-condensed text-blue-100 pb-2 border-b-2 transition-colors ${
             selected === i
               ? "border-white text-white"
               : "border-transparent hover:border-white/30"
@@ -49,7 +49,7 @@ export default function DestinationPage() {
     <h2 className="font-bellefair text-5xl md:text-6xl lg:text-7xl uppercase text-white mb-4">
       {dest.name}
     </h2>
-    <p className="text-blue-50 mb-8 leading-relaxed">
+    <p className="font-barlow text-blue-50 mb-8 leading-relaxed">
       {dest.description}
     </p>
 

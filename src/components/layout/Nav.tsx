@@ -15,12 +15,12 @@ export default function Nav({onNavigate}: {onNavigate?: ()=> void}){
     const pathname = usePathname()
 
     return(
- <div aria-label="Primary" className="backdrop-blur-md md:bg-white/5">
-      <ul className="flex flex-col md:flex-row gap-6 md:gap-8  py-2 w-full pt-15 md:pt-2 ">
+ <div aria-label="Primary" className=" ">
+      <ul className="flex flex-col md:flex-row gap-6 md:gap-8  py-8 w-full ">
         {links.map((l) => {
           const active = pathname === l.href;
           return (
-            <li key={l.href} className="w-full md:w-auto h-fit">
+            <li key={l.href} className="w-full md:w-auto h-fit font-barlow-condensed">
               <Link
                 href={l.href}
                 onClick={onNavigate}

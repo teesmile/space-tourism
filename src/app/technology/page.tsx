@@ -28,7 +28,7 @@ export default function Technology() {
 
       <div className="w-full relative">
 
-        <h5 className="tracking-widest2 text-blue-100 text-sm mb-8 uppercase text-center md:text-left">
+        <h5 className="font-barlow-condensed tracking-widest2 text-blue-100 text-sm mb-8 uppercase text-center md:text-left">
           <span className="text-white/30 mr-4">03</span>
           Space Launch 101
         </h5>
@@ -48,7 +48,7 @@ export default function Technology() {
             <button
               key={i}
               onClick={() => setSelected(i)}
-              className={`w-10 h-10 rounded-full border-2 flex items-center justify-center text-lg font-bold transition-all ${selected === i
+              className={`font-bellefair w-10 h-10 rounded-full border-2 flex items-center justify-center text-lg font-bold transition-all ${selected === i
                   ? "bg-white text-black border-white"
                   : "bg-transparent text-white border-white/30 hover:border-white"
                 }`}
@@ -60,13 +60,13 @@ export default function Technology() {
         </div>
 
         <div className="items-center justify-center lg:text-left w-full  lg:max-w-[clamp(280px,37.5vw,540px)] px-8 md:px-0 lg:px-0 lg:ml-20">
-          <div className="mb-2 text-blue-100 tracking-widest2 uppercase text-sm">
+          <div className="font-bellefair mb-2 text-blue-100 tracking-widest2 uppercase text-sm">
             The terminology...
           </div>
           <h2 className="font-bellefair text-3xl md:text-4xl lg:text-5xl uppercase text-white mb-4">
             {item.name}
           </h2>
-          <p className="text-blue-50 mb-8 leading-relaxed">
+          <p className="font-barlow text-blue-50 mb-8 leading-relaxed">
             {item.description}
           </p>
         </div>

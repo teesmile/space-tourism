@@ -36,3 +36,9 @@ a{
 .animate-fade-in {
   animation: fade-in 1s ease;
 }
+
+@theme {
+  --font-barlow: var(--font-barlow), sans-serif;
+  --font-bellefair: var(--font-bellefair), serif;
+  --font-barlow-condensed: var(--font-barlow-condensed), sans-serif;
+}

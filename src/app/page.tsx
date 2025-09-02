@@ -18,13 +18,13 @@ export default function Home() {
     >
      
       <div className="w-full lg:max-w-[clamp(320px,37.5vw,540px)]">
-        <p className="uppercase tracking-widest2 text-blue-100 mb-6 text-lg md:text-xl lg:text-2xl">
+        <p className=" uppercase tracking-widest2 text-blue-100 mb-6 text-lg md:text-xl lg:text-2xl font-barlow-condensed">
           So, you want to travel to
         </p>
         <h1 className="font-bellefair text-6xl md:text-7xl lg:text-8xl xl:text-9xl uppercase text-white my-4">
           Space
         </h1>
-        <p className="text-blue-50 leading-relaxed text-base md:text-lg lg:text-xl">
+        <p className="font-barlow text-blue-50 leading-relaxed text-base md:text-lg lg:text-xl">
           Let’s face it: if you want to go to space, you might as well genuinely go to outer space
           and not hover kind of on the edge of it. Sit back and relax because we’ll give you a truly
           out of this world experience!

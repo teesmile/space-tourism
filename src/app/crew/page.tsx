@@ -19,16 +19,16 @@ export default function Crew() {
 >
 
    <div className="w-full max-w-md md:max-w-lg lg:max-w-[clamp(320px,37.5vw,540px)]">
-    <h5 className="tracking-widest2 text-blue-100 text-sm mb-8 uppercase md:text-left">
+    <h5 className="font-barlow-condensed tracking-widest2 text-blue-100 text-sm mb-8 uppercase md:text-left">
       <span className="text-white/30 mr-4">02</span>
       Meet your crew
     </h5>
 
-    <h6 className="uppercase text-blue-100 text-lg mb-2">{member.role}</h6>
+    <h6 className="font-bellefair uppercase text-blue-100 text-lg mb-2">{member.role}</h6>
     <h2 className="font-bellefair text-3xl md:text-5xl lg:text-6xl uppercase text-white mb-4">
       {member.name}
     </h2>
-    <p className="text-blue-50 mb-8 leading-relaxed">
+    <p className="font-barlow text-blue-50 mb-8 leading-relaxed">
       {member.bio}
     </p>
 

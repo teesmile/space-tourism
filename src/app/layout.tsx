@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed, Bellefair } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import PageBackground from "@/components/layout/pageBackground";
 // import StyledComponentsRegistry from "@/styles/styled-registry"
 
-const barlowCondensed = Barlow_Condensed({
-  variable: "--font-barlow-condensed",
+export const barlow = Barlow({
   subsets: ["latin"],
-  weight: ['400', '700'],
-});
-const barlow = Barlow({
+  weight: ["400", "700"],
   variable: "--font-barlow",
-  subsets: ["latin"],
-  weight: ['400', '500'],
+});
 
-})
-const bellefair = Bellefair({
-  variable: "--font-bellefair",
+export const bellefair = Bellefair({
   subsets: ["latin"],
-  weight: ['400'],
+  weight: ["400"],
+  variable: "--font-bellefair",
+});
+
+export const barlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-barlow-condensed",
 });
 
 
@@ -36,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${barlow.variable} ${bellefair.variable} ${barlowCondensed.variable} min-h-dvh antialiased`}
+      className={`${barlow.variable} ${bellefair.variable} ${barlowCondensed.variable} min-h-dvh antialiased`}
       >
         {/* <StyledComponentsRegistry> */}
         {children}
