@@ -53,11 +53,11 @@ export default function DestinationPage() {
       {dest.description}
     </p>
 
-    <hr className="border-blue-900 w-full mb-8" />
+    <hr className="border-white/70 w-full mb-8" />
 
-    <div className="flex flex-col gap-6 items-center justify-around w-full md:flex-row md:gap-16">
+    <div className="uppercase flex flex-col gap-6 items-center justify-around w-full md:flex-row md:gap-16">
       <div>
-        <h6 className="text-blue-100 text-xs tracking-widest2 mb-2">
+        <h6 className="font-barlow-condensed text-blue-100 text-xs tracking-widest2 mb-2">
           Avg. Distance
         </h6>
         <span className="font-bellefair text-2xl text-white">
@@ -65,7 +65,7 @@ export default function DestinationPage() {
         </span>
       </div>
       <div>
-        <h6 className="text-blue-100 text-xs tracking-widest2 mb-2">
+        <h6 className="font-barlow-condensed text-blue-100 text-xs tracking-widest2 mb-2">
           Est. Travel Time
         </h6>
         <span className="font-bellefair text-2xl text-white">
