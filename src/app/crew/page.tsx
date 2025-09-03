@@ -14,16 +14,16 @@ export default function Crew() {
      <main
   className="
     flex flex-col items-center text-center px-6 py-8 min-h-screen
-    lg:flex-row lg:items-center lg:justify-between lg:text-left lg:gap-20 lg:px-36 lg:py-20
+    lg:flex-row lg:items-center lg:justify-between lg:text-left lg:gap-20 lg:px-36 lg:py-20 md:pt-0
   "
 >
 
-   <div className="w-full max-w-md md:max-w-lg lg:max-w-[clamp(320px,37.5vw,540px)]">
-    <h5 className="font-barlow-condensed tracking-widest2 text-blue-100 text-sm mb-8 uppercase md:text-left">
+   <div className="w-full">
+    <h5 className="font-barlow-condensed tracking-widest2 text-blue-100 text-sm mb-8 uppercase md:text-left !text-left">
       <span className="text-white/30 mr-4">02</span>
       Meet your crew
     </h5>
-
+    <div className="w-full max-w-[540px] mx-auto px-8 md:px-0 text-center lg:text-left">
     <h6 className="font-bellefair uppercase text-blue-100 text-lg mb-2">{member.role}</h6>
     <h2 className="font-bellefair text-3xl md:text-5xl lg:text-6xl uppercase text-white mb-4">
       {member.name}
@@ -32,6 +32,8 @@ export default function Crew() {
       {member.bio}
     </p>
 
+    </div>
+    
     {/* Dot Navigation */}
     <div className="flex gap-4 justify-center lg:justify-start ">
       {crew.map((_, i) => (
@@ -54,7 +56,10 @@ export default function Crew() {
     <img
       src={member.images.png}
       alt={member.name}
-      className="block w-full h-auto object-contain z-0"
+      className="block h-[300px]       
+      md:w-[420px] md:h-[420px]
+       lg:w-[500px] lg:h-auto
+      object-contain z-0"
     />
     {/* <div className="absolute bottom-0 left-0 w-full h-1/3 z-10 pointer-events-none bg-gradient-to-b from-transparent to-[#0B0D17]" /> */}
   </div>

@@ -16,7 +16,7 @@ export default function Nav({onNavigate}: {onNavigate?: ()=> void}){
 
     return(
  <div aria-label="Primary" className=" ">
-      <ul className="flex flex-col md:flex-row gap-6 md:gap-8  py-8 w-full ">
+      <ul className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-16  py-8 w-full ju ">
         {links.map((l) => {
           const active = pathname === l.href;
           return (
