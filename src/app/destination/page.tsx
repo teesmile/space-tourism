@@ -14,38 +14,36 @@ export default function DestinationPage() {
     lg:flex-row lg:items-start lg:justify-center lg:gap-24 lg:text-left
   "
     >
-      <div className="w-full lg:w-auto">
-        <h5 className="font-barlow-condensed tracking-widest2 text-blue-100 text-sm mb-8 uppercase lg:mb-16 md:!text-left">
-          <span className=" text-white/30 mr-4">01</span>
-          Pick your destination
-        </h5>
+      <div className="content lg:w-1/2 lg:px-18">
+        <div className="w-full">
+          <h5 className="lg:w-3xl font-barlow-condensed tracking-widest2 text-orange-50 text-sm mb-8 uppercase md:!text-left">
+            <span className=" text-white/30 mr-4">01</span>
+            Pick your destination
+          </h5>
+        </div>
+
+        <div className="lg:pt-20 md:relative flex flex-col items-center lg:items-start">
+
+
+          <img
+            src={dest.images.png}
+            alt={dest.name}
+            className="w-40 h-40 md:w-72 md:h-72 lg:w-[445px] lg:h-[445px] lg:text-left object-contain"
+          />
+        </div>
       </div>
 
-      <div className="content">
 
-        
-      </div>
-      <div className=" md:relative flex flex-col items-center lg:items-start">
-
-
-        <img
-          src={dest.images.png}
-          alt={dest.name}
-          className="w-40 h-40 md:w-72 md:h-72 lg:w-[445px] lg:h-[445px] lg:text-left object-contain"
-        />
-      </div>
-
-
-      <div className="mt-8 lg:mt-28 w-full max-w-md lg:max-w-[clamp(320px,37.5vw,540px)]">
+      <div className="mt-8 lg:mt-28 lg:pt-20 w-full max-w-md lg:max-w-[clamp(320px,37.5vw,540px)]">
         {/* Tab Navigation */}
         <nav className="flex gap-6 mb-8 justify-center lg:justify-start">
           {destinations.map((d, i) => (
             <button
               key={d.name}
               onClick={() => setSelected(i)}
-              className={`uppercase tracking-widest2 font-barlow-condensed text-blue-100 pb-2 border-b-2 transition-colors ${selected === i
-                  ? "border-white text-white"
-                  : "border-transparent hover:border-white/30"
+              className={`uppercase tracking-widest2 font-barlow-condensed text-orange-50 pb-2 border-b-2 transition-colors ${selected === i
+                ? "border-orange-50 text-orange-50"
+                : "border-transparent hover:border-white/30"
                 }`}
             >
               {d.name}

@@ -10,7 +10,7 @@ export default function ExploreButton() {
         <span className="transition-all duration-300 scale-0 group-hover:scale-125 opacity-0 group-hover:opacity-40 w-full h-full rounded-full bg-white/20"></span>
       </span>
       <Link  href='/destination' className=' cursor-pointer'>
-       <button className="font-bellefair cursor-pointer w-38 h-38 rounded-full bg-white text-black flex items-center justify-center text-lg shadow-lg  hover:text-black/80 hover:font-light transition-all duration-200">
+       <button className="font-bellefair cursor-pointer w-38 h-38 lg:w-64 lg:h-64 lg:text-3xl rounded-full bg-white text-black flex items-center justify-center text-lg shadow-lg  hover:text-black/80 hover:font-light transition-all duration-200">
         EXPLORE
       </button>
       </Link>
