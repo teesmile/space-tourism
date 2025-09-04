@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Mentor - Space tourism website solution
 
-## Getting Started
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).  
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### The challenge
 
-## Learn More
+Users should be able to:
 
-To learn more about Next.js, take a look at the following resources:
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and toggle between tabs to see new information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Screenshot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![Space Tourism Website Screenshot](./public/assets/desktopp.png)
+![Space Tourism Website Screenshot](./public/assets/tabletp.png)
+![Space Tourism Website Screenshot](./public/assets/mobilep.png)
 
-## Deploy on Vercel
+### Links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Solution URL:** [Add solution URL here](https://github.com/teesmile/space-tourism)
+- **Live Site URL:** [Add live site URL here](https://space-tourism-toni.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## My process
+
+### Built with
+
+- Semantic **HTML5** markup
+- **Tailwind CSS** for utility-first styling
+- **Flexbox** & **CSS Grid** for layout
+- **Mobile-first** responsive workflow
+- **React** for component-based UI
+- **Next.js** for routing and performance optimizations
+- **TypeScript** for type safety
+- **Framer Motion** for smooth animations
+
+### What I learned
+
+This project reinforced my skills in:
+
+- Building **multi-page layouts** with Next.js routing
+- Creating **responsive designs** that adapt cleanly from mobile → tablet → desktop
+- Implementing **tabbed navigation** with state management
+- Using **Tailwind's responsive utilities** to control layout at different breakpoints
+- Animating UI elements with **Framer Motion** for smooth transitions
+
+Example: Tab switching logic for the Technology page
+
+```tsx
+const [selected, setSelected] = useState(0);
+
+return (
+  <div className="flex gap-4">
+    {tech.map((_, i) => (
+      <button
+        key={i}
+        onClick={() => setSelected(i)}
+        className={`w-10 h-10 rounded-full ${
+          selected === i ? "bg-white text-black" : "bg-transparent text-white"
+        }`}
+      >
+        {i + 1}
+      </button>
+    ))}
+  </div>
+);
+ ```
+ ## Continued development
+
+In the future, I’d like to:
+
+- Add **ARIA roles** and improved keyboard navigation for accessibility
+- Implement **dark mode** toggle
+- Explore **server-side data fetching** for dynamic content
+- Add **unit tests** for components
+
+## Useful resources
+
+- [**Tailwind CSS Docs**](https://tailwindcss.com/docs) – For responsive utility classes and layout helpers
+- [**Next.js Documentation**](https://nextjs.org/docs) – For routing and optimization
+- [**Framer Motion**](https://www.framer.com/motion/) – For animation patterns
+
+
+## 👤 Author  
+
+- **Name:** Anthony Ugwuja  
+- **Mentor (Main Profile):** [@Oluwasetemi](https://github.com/Oluwasetemi)  
+- **GitHub (Project Repo):** [@teesmile](https://github.com/teesmile)  
